@@ -1,0 +1,27 @@
+<view class="input-wrapper {{computedClass}} {{theme}} cls">
+  <view class="wrapper">
+    <label class="input-label">{{label}}
+    </label>
+    <input
+        class="input"
+        type="{{type}}"
+        focus="{{focus}}"
+        disabled="{{disabled}}"
+        cursor-spacing="{{curSpacing}}"
+        cursor="{{cursor}}"
+        selection-start="{{selectionStart}}"
+        selection-end="{{selectionEnd}}"
+        adjust-position="{{adjustPosition}}"
+        password="{{password}}"
+        confirm-type="{{confirmType}}"
+        confirm-hold="{{confirmHold}}"
+        aria-label="{{ariaLabel}}"
+        bindfocus="handleInputFocus"
+        bindinput="handleInputChange"
+        bindblur="handleInputBlur"
+        maxlength="{{maxlength}}"
+        value="{{value}}"/>
+    <view wx:if="{{showIcon}}" class="input-icon {{iconType}}" />
+  </view>
+  <text wx:if="{{isError}}" class="err-msg">{{errorText}}</text>
+</view>

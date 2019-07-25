@@ -1,0 +1,1 @@
+<switch class="cls" color="#000000" bindchange="handleChange" disabled="{{disabled}}" checked="{{checked}}" />

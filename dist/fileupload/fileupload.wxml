@@ -1,0 +1,5 @@
+<view 
+  class="fileupload-wrapper cls"
+  bindtap="handleClick">
+  <slot name="fileupload-slot"></slot>
+</view>

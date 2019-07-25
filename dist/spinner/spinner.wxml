@@ -1,0 +1,15 @@
+<view class="spinner-wrapper cls" wx:if="{{showSpinner}}">
+  <view class="spinner-pdp" wx:if="{{spinnerType==='pdp'}}">
+    <view class="img-block spinner-block"></view>
+    <view class="desc-block-1 spinner-block"></view>
+    <view class="desc-block-2 spinner-block"></view>
+    <view class="desc-block-3 spinner-block"></view>
+    <view class="desc-block-4 spinner-block"></view>
+  </view>
+  <view class="type-unready" wx:elif="{{spinnerType==='unready'}}">
+    <view class="loading-image black-spinner"></view>
+  </view>
+  <view class="type-processing" wx:else="{{spinnerType==='processing'}}">
+    <view class="loading-image white-spinner"></view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+<view class="radio-wrapper cls">
+  <view class="radio-icon">
+    <view bindtap="handleCheck" class="{{checkStatus}} radio"></view>
+  </view>
+  <view class="content">
+    <slot name="radio-slot"></slot>
+  </view>
+</view>

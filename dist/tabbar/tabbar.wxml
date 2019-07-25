@@ -1,0 +1,26 @@
+<view class="tab-bar {{ isIphoneX ? 'danger-fixed' : ''}}">
+  <view class="tab-bar-item" wx:for="{{ list }}" wx:key="{{ item.key }}">
+    <view class="tab-bar-item-img" style="background-image: url({{ item.selected ? item.selectedIcon : item.icon }});"></view>
+    <view 
+      wx:if="{{ item.text }}"
+      class="tab-bar-item-text {{ item.selected ? 'selected-text' : ''}}"
+    >
+      {{ item.text }}
+    </view>
+    <block wx:if="{{ item.showBadge && item.badgeCount }}">
+      <text class="badge">{{ item.badgeCount }}</text>
+    </block>
+  </view>
+
+  <view class="tab-bar-list">
+    <view 
+      class="tab-bar-layer" 
+      wx:for="{{ list }}" 
+      wx:key="{{ item.key }}" 
+      data-key="{{ item.key }}" 
+      bindtap="handleClickItem" 
+      style="width: {{ 100 / list.length }}%"
+    >
+    </view>
+  </view>
+</view>

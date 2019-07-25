@@ -1,0 +1,21 @@
+<movable-area class="container cls" style="width: {{width}}rpx; height: {{height}}rpx;">
+  <movable-view 
+    direction="horizontal" 
+    class="movable-view" 
+    out-of-bounds="{{out}}" 
+    damping="20" 
+    x="{{_product._x}}" 
+    style="width: {{(1*width) + slideWidth}}rpx; height: {{height}}rpx;" 
+    inertia 
+    data-product="{{ product }}" 
+    bindtouchend="onTouchEnd" 
+    bindtouchstart="onTouchStart" 
+    bindchange="onChange">
+    <view class="sliderview-left">
+      <slot name="left"></slot>
+    </view>
+    <view class="sliderview-right">
+      <slot name="right"></slot>
+    </view>
+  </movable-view>
+</movable-area>

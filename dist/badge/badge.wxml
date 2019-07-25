@@ -1,0 +1,6 @@
+<view class="badge cls">
+  <view class="badge-dot {{dotClass}}">
+    <text wx:if="{{!dot}}" class="badge-dot-text">{{content}}</text>
+  </view>
+  <slot name="badge-slot"></slot>
+</view>

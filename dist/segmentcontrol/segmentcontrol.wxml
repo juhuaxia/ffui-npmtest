@@ -1,0 +1,5 @@
+<view class="segment-control">
+  <view class="segment-control-item {{ currentIndex === index ? 'selected' : '' }}" wx:for="{{ data }}" wx:key="index" data-index="{{ index }}" bindtap="handleClickItem">
+    {{item}}
+  </view>
+</view>

@@ -1,0 +1,10 @@
+<view class="selector-wrapper">
+  <view class="selector-button" bindtap="handleClick">
+    <view class="selector-icon icon-arrow-down"></view>
+  </view>
+  <ff-popup show="{{ showPopup }}" position="{{ position }}" bind:closePopup="handleClosePopup" directionValue="{{ directionValue }}">
+    <view slot="popup-slot">
+      <slot name="selector-slot"></slot>
+    </view>
+  </ff-popup>
+</view>

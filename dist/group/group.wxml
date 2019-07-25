@@ -1,0 +1,3 @@
+<view class="group-wrapper cls" bind:onCheckChange="onCheckChange">
+  <slot name="group-slot"></slot>
+</view>

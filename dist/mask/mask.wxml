@@ -1,0 +1,7 @@
+<view
+  class="ff-transition ff-mask cls"
+  bind:tap="handleTap"
+  catch:touchmove="noop"
+  style="animation-name: ff-{{ name }}-{{ kind }}; animation-duration: {{ duration }}ms; z-index: {{ zIndex }}; {{ display ? '' : 'display:none;'}}"
+  bind:animationend="handleAnimationEnd">
+</view>

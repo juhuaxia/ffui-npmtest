@@ -1,0 +1,17 @@
+<view class="button-wrapper {{buttonCls}} cls">
+  <button
+    disabled="{{disabled}}"
+    form-type="{{formType}}"
+    open-type="{{openType}}"
+    session-from="{{sessionFrom}}"
+    send-message-title="{{sendMessageTitle}}"
+    send-message-path="{{sendMessagePath}}"
+    send-message-img="{{sendMessageImg}}"
+    show-message-card="{{showMessageCard}}"
+    app-parameter="{{appParameter}}"
+    bindtap="handleClick"
+  >
+    <slot></slot>
+  </button>
+  <view class="icon {{iconCls}}"></view>
+</view>

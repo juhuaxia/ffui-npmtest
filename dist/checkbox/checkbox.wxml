@@ -1,0 +1,8 @@
+<view class="checkbox-wrapper cls">
+  <view class="check-icon">
+    <view bindtap="handleCheck" class="{{checkStatus}} check"></view>
+  </view>
+  <view class="content">
+    <slot name="checkbox-slot"></slot>
+  </view>
+</view>

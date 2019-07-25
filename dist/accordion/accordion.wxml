@@ -1,0 +1,18 @@
+<!-- param{
+    title: title,
+    animationToggle: content show or hide
+  } -->
+<view class="accordion cls">
+  <view class="title font-semibold" bindtap="toggle">
+    {{ title }}
+    <view class="title-icon">
+      <view wx:if="{{animationToggle}}" class="icon icon-arrow-down"></view>
+      <view wx:if="{{!animationToggle}}" class="icon icon-arrow-up"></view>
+    </view>
+  </view>
+  <view class="toggleBox animation" style="height: {{ animationToggle ? 0 : contentHeight + 'px' }}">
+    <view id="{{idName}}" class="list-cells {{ !animationToggle ? 'list-cells-show' : ''}}">
+      <slot></slot>
+    </view>
+  </view>
+</view>

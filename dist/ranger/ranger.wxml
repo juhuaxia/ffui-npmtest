@@ -1,0 +1,19 @@
+<view class='range' bindtouchstart="handleTouchStart">
+  <view class='range-process-bar' id="rangerProcessBar">
+    <view class='range-process-bar-inner' style="left: {{barLeft}}px; width: {{barWidth}}px"></view>
+    <view 
+      class='range-block'
+      bindtouchmove="handleTouchMove"
+      bindtouchend="handleTouchEnd"
+      data-slider="minSliderX"
+      style="left: {{minSliderX}}px"
+    ></view>
+    <view 
+      class='range-block'
+      bindtouchmove="handleTouchMove"
+      bindtouchend="handleTouchEnd"
+      data-slider="maxSliderX"
+      style="left: {{maxSliderX}}px;"
+    ></view>
+  </view>
+</view>

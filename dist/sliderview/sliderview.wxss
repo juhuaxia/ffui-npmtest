@@ -1,0 +1,1 @@
+.movable-view{display:flex;direction:row;overflow:hidden}.container{overflow:hidden}

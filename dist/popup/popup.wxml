@@ -1,0 +1,12 @@
+<view>
+  <ff-mask
+    show="{{ mask && show }}"
+    z-index="{{ zIndex }}"
+    bind:tapMask="handleTapMask"></ff-mask>
+  <view
+    wx:if="{{ initialized }}"
+    class="popup ff-popup-{{ position }}"
+    style="z-index: {{ zIndex }}; {{ directionProp ? directionProp + ': ' + directionValue + ';' : ''}} animation-name: ff-{{ position }}-{{ kind }}; animation-duration: {{ duration }}ms; {{ display ? '' : 'display: none;' }}">
+    <slot name="popup-slot"></slot>
+  </view>
+</view>

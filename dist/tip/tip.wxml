@@ -1,0 +1,5 @@
+<view class="toptip cls" wx:if="{{ showTip }}">
+  <view class="icon-info {{tipIcon}}"></view>
+  <text class="text font-light" bindtap="handleTextClick">{{ tipText }}</text>
+  <view class="icon-close {{closeIcon}}" bindtap="handleClose"></view>
+</view>
